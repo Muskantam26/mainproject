@@ -1,0 +1,68 @@
+#ani{
+    /* background-image: url("https://www.shutterstock.com/image-vector/abstract-golden-light-rays-scene-600nw-2271597037.jpg"); */
+       background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(151, 144, 144); */
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+}
+h2{
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* .protest-revolution-regular { */
+        font-family: "Protest Revolution", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+.signup-container {
+    margin-top: 50px;
+    background: transparent;
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    /* margin-right: 300px; */
+    /* padding-right: 300px; */
+   
+}
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+#sign{
+    background-color: purple;
+    font-size: 20px;
+    color: white;
+    font-family: "Protest Revolution", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+#sign:hover{
+    background-color: palevioletred;
+}
+
+
+#logg{
+    background-color: transparent;
+    color:purple;
+    text-decoration: none;
+
+}
+#logg:hover{
+color:white;
+}
