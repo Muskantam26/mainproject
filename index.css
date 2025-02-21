@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    overflow: hidden;
+}
+
+
 #ani{
     /* background-image: url("https://www.shutterstock.com/image-vector/abstract-golden-light-rays-scene-600nw-2271597037.jpg"); */
        background-color: transparent;
@@ -34,6 +40,7 @@ h2{
     color: white;
     /* margin-right: 300px; */
     /* padding-right: 300px; */
+    position: fixed;
    
 }
 input {
