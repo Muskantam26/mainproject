@@ -1,12 +1,12 @@
 
-VANTA.HALO({
-    el: "#ani",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00
-  })
+// VANTA.HALO({
+//     el: "#ani",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: false,
+//     minHeight: 200.00,
+//     minWidth: 200.00
+//   })
 
 
 let signUp=() =>{
