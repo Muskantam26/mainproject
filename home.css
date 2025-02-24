@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0px;
     box-sizing: border-box;
 }
@@ -71,7 +71,6 @@ nav li a:hover{
 }
 
 
-
 body {
   position: relative;
   height: 100%;
@@ -81,58 +80,120 @@ body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #000;
+  color:rgb(2, 2, 18);
   margin: 0;
   padding: 0;
 }
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 80vh;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgb(212, 204, 204);
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.8XaR2TPU3t6HLU5fo4gFzAHaEL&pid=Api&P=0&h=180");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .swiper-slide img {
-  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#one{
+  background-image: url("https://images.hdqwalls.com/download/wish-4r-2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#two{
+  background-image: url("https://wallpaperaccess.com/full/2594851.jpg");
+}
+#three{
+  background-image: url("https://static.toiimg.com/photo/65144713.cms");
+}
+#four{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/106/873/197/horror-keep-telling-yourself-ouija-it-s-just-a-game-wallpaper-preview.jpg");
+}
+#five{
+  background-image: url("https://i.ytimg.com/vi/094EISO9CnU/maxresdefault.jpg");
+}
+#six{
+  background-image: url("https://th.bing.com/th/id/OIP.U98YG_jZbSHt_Qikf7O_UgHaEK?rs=1&pid=ImgDetMain");
+}
+#saven{
+  background-image: url("https://hdqwalls.com/wallpapers/the-jungle-book-hd.jpg");
+}
+#eight{
+  background-image: url("https://th.bing.com/th/id/OIP.q8rvzuFwkP3XaOIAP8DYywHaEK?w=1536&h=864&rs=1&pid=ImgDetMain");
+}
+#nine{
+  background-image: url("https://www.themoviedb.org/t/p/original/jYryspBuu5DTxkr9qI5bG4SnDub.jpg");
+}
+button{
+  font-size: 30px;
+  font-style: italic;
+  background-color: white;
+  color: black;
+  margin-right: 70%;
+  margin-top: 25%;
+  border-radius: 20%;
+  height: 10vh;
+  width: 15%;
+ 
+}
+button:hover{
+  background-color:rgb(2, 2, 18) ;
+  color: white;
+}
+
+/* second section */
+#sec{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  background-color:  rgb(2, 2, 18) ;
+  color: white;
+  height: 15vh;
+  font-size: 20px;
+}
+#sec span{
+  color: yellow;
+}
+
+
+.swiper1 {
   width: 100%;
+  height: 100vh;
+}
+
+.swiper1-slide1 {
+  text-align: center;
+  font-size: 18px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.swiper1-slide1 img {
+  display: block;
+  width: 20%;
   height: 100%;
   object-fit: cover;
-}
-
-.autoplay-progress {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  z-index: 10;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--swiper-theme-color);
-}
-
-.autoplay-progress svg {
-  --progress: 0;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  stroke-width: 4px;
-  stroke: var(--swiper-theme-color);
-  fill: none;
-  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-  stroke-dasharray: 125.6;
-  transform: rotate(-90deg);
 }
