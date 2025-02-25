@@ -8,15 +8,18 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay:{
+    delay:2000,
+  }
 });
 
 // second section
 
-var swiper = new Swiper(".mySwiper1", {
+var swiper2 = new Swiper(".mySwiper1", {
   slidesPerView: 1,
   spaceBetween: 10,
   pagination: {
-    el: ".swiper-pagination1",
+    el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
@@ -33,4 +36,7 @@ var swiper = new Swiper(".mySwiper1", {
       spaceBetween: 50,
     },
   },
+  autoplay:{
+    delay:2000,
+  }
 });
