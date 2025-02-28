@@ -195,13 +195,18 @@ button a{
   overflow-x: hidden;
 }
 
-#bb{
+ #bb{
   
-  position: absolute;
+  position: relative;
+  font-size: 10px;
+  /* margin-top: 520%; */
+  /* height: 20vh; */
+  width: 60px;
   margin-top: 140%;
-  width: 80px;
-
-}
+  /* margin-left: 20%; */
+  font-weight: bold;
+  
+} 
 
 /*.swiper-slide {
   width: 100%;
@@ -239,22 +244,15 @@ button a{
   color: white;
 }
 
-.swiper2 {
+#mainn{
+  height: 80vh;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 100vh;
-}
-
-.swiper-slide2 {
-  background-position: center;
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/33621025/thumb/1.jpg?ip=x480");
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 300px;
-  height: 300px;
 }
-
-.swiper-slide2 img {
-  display: block;
-  width: 100%;
+/* #main img{
   height: 100vh;
-}
+  width: 100%;
+
+} */
