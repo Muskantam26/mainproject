@@ -26,6 +26,9 @@ body{
     gap: 500px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 nav{
     display: flex;
     justify-content: center;
@@ -292,4 +295,141 @@ button a{
 #CS:nth-child(3) { animation-delay: 3s; }
 #CS:nth-child(4) { animation-delay: 3.5s; }
 #CS:nth-child(5) { animation-delay: 4s; }
+
+/* third section */
+
+#fsec{
+  width: 100%;
+  height: 15vh;
+  background-color:rgb(2, 2, 18);
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+#fosec span{
+  color: yellow;
+  
+}
+#ff{
+  /* height: 90vh; */
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  
+
+}
+#o{
+  width: 30%;
+  height: 40vh;
+  margin-left: 20px;
+  display: flex;
+  /* border: 1px solid white; */
+
+  background-image: url("offers.jpg");
+  background-size: 400px 150px;
+  background-repeat: no-repeat;
+  background-color: white;
+  
+
+}
+#n{
+  width: 30%;
+  height: 40vh;
+  background-size: 370px 150px;
+  background-color: white;
+  background-repeat: no-repeat;
+
+  background-image: url("offers2.jpg");
+  display: flex;
+      /* border: 1px solid white; */
+}
+#e{
+  width: 30%;
+  height: 40vh;
+  background-size:  400px 150px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-image: url("offers3.jpg");
+  display: flex;
+  /* border: 1px solid white; */
+}
+#t{
+  width: 30%;
+  height: 40vh;
+  margin-right: 20px;
+  display: flex;
+  /* border: 1px solid white; */
+  background-image: url("offers4.jpg");
+  background-size:  400px 150px;
+  background-repeat: no-repeat;
+  background-color: white;
+
+}
+#ff p{
+  color: black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+ 
+
+
+
+}
+
+
+
+
+footer {
+  background-color: rgb(2, 2, 18);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  height: 30vh;
+}
+.footer-logo{
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  
+}
+.footer-logo span{
+  color: yellow;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-links a, .footer-social a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 25px;
+  /* font-family: "Grechen Fuemen", serif; */
+  /* font-weight: bold; */
+  font-style: normal;
+
+
+}
+.footer-social a i {
+  font-size: 25px;
+}
+.footer-links a:hover, .footer-social a:hover {
+  color: yellow;
+}
+.footer-copy{
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+}
 
