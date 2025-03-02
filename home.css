@@ -385,8 +385,45 @@ button a{
 
 }
 
+#v{
+  margin-top: 38%;
+  /* background-color: yellow; */
+  height: 5vh;
+  width: 18%;
+  margin-right: 10%;
+}
+.bb{
+  background-color: yellow;
+  width: 100%;
+
+}
+.b1{
+margin-top: 150%;
+/* margin-right: 50%; */
+width: 150%;
+border-radius: 10px;
+
+}
+.b2{
+  margin-top: 180%;
+  width: 165%;
+  border-radius: 10px;
+}
+.b3{
+  margin-top: 130%;
+  width: 120%;
+  border-radius: 10px;
+}
+.b4{
+  margin-top: 130%;
+  width: 115%;
+  margin-left: 170%;
+  border-radius: 10px;
+}
 
 
+
+/* footer */
 
 footer {
   background-color: rgb(2, 2, 18);
