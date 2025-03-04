@@ -5,8 +5,28 @@ let fetchData= async()=>{
 
     let data= await res.json()
 
-    // console.log(data)
+     console.log(data)
+     Datashow(data)
+}
+
+let searchh=async()=>{
+      let searchinp= document.querySelector("#searchinp").value.toLowerCase()
+      let url='http://localhost:3000/movie'
+      let res=await fetch(url,{method:"GET"})
+      let data= await res.json()
+
+      let filterData=data.filter((e)=>{
+
+     return e.name.toLowerCase().includes(searchinp) 
+
+      })
+    Datashow(filterData)
+}
+let Datashow=(data)=>{
+
+
     let a=document.querySelector("#dat")
+    a.innerHTML=""
    data.map((e)=>{
    a.innerHTML+=(`
            <tr>
