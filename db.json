@@ -1,0 +1,28 @@
+{
+  "movie": [
+    {
+      "name": "Muskan tamrakar",
+      "date": "2025-02-26",
+      "number": "6268951339",
+      "person": "3",
+      "price": 200,
+      "id": "6299"
+    },
+    {
+      "id": "658c",
+      "name": "roshni",
+      "date": "2025-03-04",
+      "number": "1234567895",
+      "person": "3",
+      "price": 200
+    },
+    {
+      "name": "bidit  parihar",
+      "date": "2025-03-05",
+      "number": "6268951339",
+      "person": "2",
+      "price": 200,
+      "id": "e0a7"
+    }
+  ]
+}
