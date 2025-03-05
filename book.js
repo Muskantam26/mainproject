@@ -132,9 +132,12 @@ let formfill=async(id)=>{
           <br><br><br><br><br><br><br><br>
         `
 
+       
+        
         document.querySelector("#formdata").innerHTML=formData
 }
 let finalupdate=(id)=>{
+        
         let inpname=document.querySelector("#upname").value
         
         let inpdate=document.querySelector("#update").value
@@ -143,7 +146,7 @@ let finalupdate=(id)=>{
         let inpperson=document.querySelector("#upperson").value
 
         let url=`http://localhost:3000/movie/${id}`
-
+       
 
         fetch(url,{
 
@@ -163,6 +166,10 @@ let finalupdate=(id)=>{
                         }
                 )
         })
+        
        
+        
+       
+        
 return false
 }
