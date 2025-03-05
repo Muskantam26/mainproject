@@ -114,18 +114,22 @@ let formfill=async(id)=>{
         console.log(data);
 
         let formData=`
-        
-          Enter Your Name :  <input type="text" id="upname" placeholder="Enter Your Name" value=${data.name}><br><br>
-       Enter Your Number : <input type="number"  id="upnumber"  placeholder="Enter Your Number" value=${data.number}><br><br>
-       Select date : <input type="date" id="update" value=${data.date}><br><br>
-       Enter Number of tickets : <input type="number" id="upperson" placeholder="Number of tickets" value=${data.person}><br><br>
+        <div id="d">
+        <form id="uf">
+        <br><br><br><br>
+       <p id="up">Enter Your Name : </p>    <input type="text" id="upname" placeholder="Enter Your Name" value=${data.name}><br><br>
+        <p id="up"> Enter Your Number :</p>  <input type="number"  id="upnumber"  placeholder="Enter Your Number" value=${data.number}><br><br>
+       <p id="up">Select date :  </p>  <input type="date" id="update" value=${data.date}><br><br>
+       <p id="up">Enter Number of tickets :</p>  <input type="number" id="upperson" placeholder="Number of tickets" value=${data.person}><br><br>
 
              
 
 
-          <input type="submit" value="update" onclick="return finalupdate('${data.id}')">
+          <input type="submit" value="update" onclick="return finalupdate('${data.id}')"  id="u">
 
-          
+          </form>
+          </div>
+          <br><br><br><br><br><br><br><br>
         `
 
         document.querySelector("#formdata").innerHTML=formData

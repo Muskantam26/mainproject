@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     color: aliceblue;
 }
 table{
@@ -64,4 +64,34 @@ margin-left: 42%;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+#uf{
+
+display: block;
+justify-content: center;
+align-items: center;
+margin-left: 40%;
+
+}
+input{
+    border-radius: 10px;
+    width: 25%;
+    height: 30px;
+    color: black;
+}
+#u{
+    width: 20%;
+    margin-left: 3%;
+    color: white;
+    background-color: palevioletred;
+    font-size: 20px;
+}
+#up{
+    font-size: 20px;
+    margin-left: 30px;
+}
+#d{
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
