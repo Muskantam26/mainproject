@@ -80,7 +80,7 @@ let login=()=>{
     let loginpass=document.querySelector("#pass").value
 
     let localname=localStorage.getItem("name")
-    localpass=localStorage.getItem("password")
+   let localpass=localStorage.getItem("password")
 if(loginname==localname && loginpass==localpass){
     location.href="home.html"
 }
