@@ -23,7 +23,7 @@ body{
     width: 100%;
     height: 80px;
     display: flex;
-    gap: 500px;
+    gap: 300px;
 }
 
 html{
@@ -33,7 +33,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 90px;
     text-decoration: none;
     list-style: none;
 
@@ -482,4 +482,84 @@ footer {
 .swiper-slide:hover iframe {
   display: block;
   
+}
+
+@media (max-width: 470px) {
+  #home {
+      flex-direction: column;
+      align-items: center;
+      height: auto; /* Allow height to adjust */
+  }
+
+  nav {
+      flex-direction: column; /* Stack navigation items */
+      gap: 10px; /* Reduced gap */
+  }
+
+  nav li a {
+      font-size: 16px; /* Smaller font size */
+  }
+
+  #navv {
+      font-size: 30px; /* Smaller title font size */
+  }
+
+  button {
+      width: 80%; /* Wider buttons for easier tapping */
+      margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .swiper {
+      height: 50vh; /* Adjust swiper height */
+  }
+
+  .swiper-slide img {
+      max-height: 40vh; /* Limit image height */
+  }
+
+  #sec, #head, #fsec {
+      font-size: 18px; /* Smaller section titles */
+  }
+
+  #ff {
+      flex-direction: column; /* Stack offers vertically */
+      align-items: center; /* Center offers */
+  }
+
+  #o, #n, #e, #t {
+      width: 90%; /* Full width for offers */
+      height: auto; /* Allow height to adjust */
+      margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer-links a, .footer-social a {
+      font-size: 20px; /* Smaller footer links */
+  }
+}
+
+/* Additional styles for the footer */
+footer {
+  background-color: rgb(2, 2, 18);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.footer-links a, .footer-social a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.footer-copy {
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-size: 25px;
 }
