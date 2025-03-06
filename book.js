@@ -6,7 +6,9 @@ let fetchData= async()=>{
     let data= await res.json()
 
      console.log(data)
-     Datashow(data)
+//      Datashow(data)
+    paginationdata(data)
+
 }
 
 let searchh=async()=>{
@@ -20,7 +22,20 @@ let searchh=async()=>{
      return e.name.toLowerCase().includes(searchinp) 
 
       })
-    Datashow(filterData)
+    paginationdata(filterData)
+}
+
+let paginationdata=(data)=>{
+        $('#pagin').pagination({
+                dataSource: data,
+                pageSize: 5,
+                showGoInput: true,
+                showGoButton: true,
+                callback: function(data, pagination) {
+                   Datashow(data)
+                }
+            })
+
 }
 let Datashow=(data)=>{
 

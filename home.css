@@ -237,6 +237,19 @@ button a{
 }  */
 
 
+
+#if img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Zoom Image */
+#if:hover img {
+  transform: scale(2.0);
+}
+
 /* third section */
 
 #head{
@@ -296,7 +309,9 @@ button a{
 #CS:nth-child(4) { animation-delay: 3.5s; }
 #CS:nth-child(5) { animation-delay: 4s; }
 
-/* third section */
+
+
+/* fourth section */
 
 #fsec{
   width: 100%;
@@ -423,6 +438,8 @@ border-radius: 10px;
 
 
 
+
+
 /* footer */
 
 footer {
@@ -517,82 +534,89 @@ footer {
 }
 
 
-@media (max-width: 470px) {
-  #home {
-      flex-direction: column;
-      align-items: center;
-      height: auto; /* Allow height to adjust */
-  }
 
-  nav {
-      flex-direction: column; /* Stack navigation items */
-      gap: 10px; /* Reduced gap */
-  }
 
-  nav li a {
-      font-size: 16px; /* Smaller font size */
-  }
+@media (max-width: 420px) {
 
-  #navv {
-      font-size: 30px; /* Smaller title font size */
-  }
 
-  button {
-      width: 80%; /* Wider buttons for easier tapping */
-      margin: 10px 0; /* Add margin for spacing */
-  }
+#CS img {
+  /* display: flex; */
+  flex-direction: column;
+  display: block;
 
-  .swiper {
-      height: 50vh; /* Adjust swiper height */
-  }
+  
+}
+#main{
+display: flex;
+flex-direction: column;
+display: block;
 
-  .swiper-slide img {
-      max-height: 40vh; /* Limit image height */
-  }
-
-  #sec, #head, #fsec {
-      font-size: 18px; /* Smaller section titles */
-  }
-
-  #ff {
-      flex-direction: column; /* Stack offers vertically */
-      align-items: center; /* Center offers */
-  }
-
-  #o, #n, #e, #t {
-      width: 90%; /* Full width for offers */
-      height: auto; /* Allow height to adjust */
-      margin: 10px 0; /* Add margin for spacing */
-  }
-
-  .footer-links a, .footer-social a {
-      font-size: 20px; /* Smaller footer links */
-  }
 }
 
-/* Additional styles for the footer */
-footer {
-  background-color: rgb(2, 2, 18);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+#top {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  /* position: absolute; */
+ background-color: rgb(2, 2, 18);
+  /* width: 100%; */
+  
+  
 }
 
-.footer-logo {
-  font-family: "Grechen Fuemen", serif;
-  font-weight: bold;
-  font-size: 30px;
+#home{
+  width: 20%;
+  height: 80px;
+  display: flex;
+  /* gap: 300px; */
+  justify-content: start;
 }
 
-.footer-links a, .footer-social a {
-  color: white;
-  margin: 0 10px;
+
+nav{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  /* gap: 90px; */
   text-decoration: none;
-  font-size: 25px;
-}
+  list-style: none;
+  position: absolute;
+  left: 34%;
+  top: 1%;
 
-.footer-copy {
+}
+nav li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+
+  
   font-family: "Grechen Fuemen", serif;
   font-weight: bold;
-  font-size: 25px;
+  font-style: normal;
+
 }
+
+#navv{
+    
+    
+    
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  /* margin-left: 50px; */
+  /* margin-top: 20px; */
+  font-size: 35px;
+  color: white;
+  margin: 0px;
+
+
+
+}
+
+
+}
+

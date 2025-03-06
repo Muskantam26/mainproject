@@ -62,9 +62,7 @@ let signUp=() =>{
 
 
     
-    // else{
-    //     alert('enter your correct number or name')
-    // }
+    
     
     localStorage.setItem("name",name)
     localStorage.setItem("number",inpnum)
