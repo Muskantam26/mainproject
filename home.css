@@ -568,7 +568,7 @@ display: block;
 
 #home{
   width: 20%;
-  height: 80px;
+  height: 95px;
   display: flex;
   /* gap: 300px; */
   justify-content: start;
@@ -579,18 +579,19 @@ nav{
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   /* gap: 90px; */
   text-decoration: none;
   list-style: none;
   position: absolute;
-  left: 34%;
-  top: 1%;
+  left: 7%;
+  top: 2.5%;
+  
 
 }
 nav li a{
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 
   
@@ -609,9 +610,14 @@ nav li a{
   font-style: normal;
   /* margin-left: 50px; */
   /* margin-top: 20px; */
-  font-size: 35px;
+  font-size: 30px;
   color: white;
   margin: 0px;
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 150px;
+margin-bottom: 60px;
 
 
 
