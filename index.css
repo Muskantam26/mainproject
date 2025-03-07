@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -117,4 +117,79 @@ h1{
 }
 #loginn:hover{
     background-color: palevioletred;
+}
+
+
+@media(max-width:420px){
+.signup-container{
+    /* margin-right: 100px; */
+    margin-top: 0px;
+    width:60% ;
+   position: absolute;
+ margin-right: 50%;
+ box-shadow: none;
+ align-items: center;
+ text-align: center;
+ 
+   
+}
+#ani{
+    /* background-image: url("https://www.shutterstock.com/image-vector/abstract-golden-light-rays-scene-600nw-2271597037.jpg"); */
+       background-color: transparent;
+    display: flex; 
+     justify-content: center; 
+     align-items: center; 
+    /* background-color: rgb(151, 144, 144); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-right: 50%; */
+    /* width: 80%; */
+   
+
+
+
+}
+*{
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+
+/* login container */
+.login-container{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 100px;
+    box-shadow: none;
+}
+h2{
+    font-size: 25px;
+}
+input{
+    width: 90%;
+}
+#sign{
+    background-color: purple;
+    font-size: 20px;
+    color: white;
+    font-family: "Protest Revolution", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+#sign:hover{
+    background-color: palevioletred;
+}
+
+
+#logg{
+    background-color: transparent;
+    color:purple;
+    text-decoration: none;
+
+}
+#logg:hover{
+color:white;
+}
+
+
 }

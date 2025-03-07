@@ -80,6 +80,7 @@ nav li a:hover{
 body {
   position: relative;
   height: 100%;
+  
 }
 
 body {
@@ -269,7 +270,7 @@ button a{
 }
 
 #mainn{
-  height: 80vh;
+  /* height: 80vh; */
   width: 100%;
   /* background-image: url("https://www.shutterstock.com/shutterstock/videos/33621025/thumb/1.jpg?ip=x480"); */
   background-color: rgb(13, 13, 33);
@@ -281,6 +282,7 @@ button a{
 }
 #CS{
   display: flex;
+  flex-direction: row;
   height: 60vh;
   width: 50%;
   margin-left: 15px;
@@ -540,13 +542,13 @@ footer {
 
 
 #CS img {
-  /* display: flex; */
+   display: flex; 
   flex-direction: column;
-  display: block;
+
 
   
 }
-#main{
+#mainn{
 display: flex;
 flex-direction: column;
 display: block;
@@ -623,6 +625,41 @@ margin-bottom: 60px;
 
 }
 
+#CS{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#head{
+  width:82% ;
+}
+#sec{
+  width: 82%;
+  font-size: 15px;
+}
+.swiper1{
+  width: 70%;
+  margin-left: 6%;
+  /* margin-right: 6%; */
+}
+.swiper-slide img{
+  width: 70%;
+  height: 75%;
+}
+.swiper{
+  width: 82%;
+  position: fixed;
+}
+#fsec{
+  width: 82%;
+}
+#ff{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
 
 }
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="seat.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Ticket Booking</h1>
+        <label for="movie">Select a movie:</label>
+        <select id="movie">
+            <option value="select movie">select movie</option>
+          <option value="stree">stree</option>
+          <option value="sanam teri kasam">sanam teri kasam</option>
+          <option value="chhava">chhava</option>
+          <option value="mufasa">mufasa</option>
+          <option value="purple heart">purple heart</option>
+
+        </select>
+        
+        <div class="seating">
+            <h3>Select Your Seats</h3>
+            <div class="seat-map" id="seatMap"></div>
+        </div>
+        
+        <button onclick="bookTickets()">Book Now</button>
+        <p id="totalPrice">Total Price: 0rs</p>
+    </div>
+    <script src="seat.js"></script>
+</body>
+</html>
