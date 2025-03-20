@@ -8,18 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Playwrite+IE+Guides&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
-    <div id="img">
-    <h1 id="h"><span>Movie Ticket</span> Booking</h1><br>
+    <div id="img"  data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" >
+    <h1 id="h"  data-aos="fade-right" data-aos-duration="3000"><span>Movie Ticket</span> Booking</h1><br>
     <form>
-       <p id="pp">Enter Your Name : </p>  <br> <input type="text" id="name" placeholder="Enter Your Name"><br><br>
-      <p id="pp"> Enter Your Number :</p>  <br> <input type="number"  id="number"  placeholder="Enter Your Number"><br><br>
-       <p id="pp">Select date :  </p> <br> <input type="date" id="date"><br><br>
-       <p id="pp">Enter Number of tickets :</p> <br><input type="number" id="person" placeholder="Number of tickets"><br><br>
+       <p id="pp"  data-aos="fade-left" data-aos-duration="3000">Enter Your Name : </p>  <br> <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+      <p id="pp" data-aos="fade-left" data-aos-duration="3000"> Enter Your Number :</p>  <br> <input type="number"  id="number"  placeholder="Enter Your Number"><br><br>
+       <p id="pp" data-aos="fade-left" data-aos-duration="3000">Select date :  </p> <br> <input type="date" id="date"><br><br>
+       <p id="pp" data-aos="fade-left" data-aos-duration="3000">Enter Number of tickets :</p> <br><input type="number" id="person" placeholder="Number of tickets"><br><br>
 
 
-          <input type="submit" value="Book" onclick="return ins()" id="sub">
+          <input type="submit" value="Book" onclick="return ins()" id="sub"  >
 
 
     </form>
@@ -27,5 +30,9 @@
    
     
     <script src="book.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
