@@ -116,7 +116,7 @@ let ins=()=>{
                         }
                 )
         })
-        location.href="show.html";
+        location.href="seat.html";
 return false
 }
 
@@ -185,6 +185,8 @@ let finalupdate=(id)=>{
        
         
        
-        
+      
 return false
 }
+
+
