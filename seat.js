@@ -1,77 +1,41 @@
 
+const rows = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'];
+        const seatsPerRow = 10;
+        const bookedSeats = ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "G3", "G4", "G5", "G6", "G7"]; // Example booked seats
+        
+        function createSeats(sectionId, startSeatNumber) {
+            const section = document.getElementById(sectionId);
+            rows.forEach(row => {
+                for (let i = startSeatNumber; i < startSeatNumber + seatsPerRow; i++) {
+                    const seat = document.createElement("div");
+                    seat.classList.add("seat");
+                    seat.innerText = i;
+                    seat.dataset.seatId = row + i;
 
+                    // Mark booked seats
+                    if (bookedSeats.includes(row + i)) {
+                        seat.classList.add("booked");
+                    }
 
+                    // Seat selection event
+                    seat.addEventListener("click", function () {
+                        if (!this.classList.contains("booked")) {
+                            this.classList.toggle("selected");
+                        }
+                    });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let tickets = parseInt(localStorage.getItem("tickets")) || 0;
-//     let selectedSeats = [];
-    
-//     document.getElementById("info").innerHTML = `
-//         Name: ${localStorage.getItem("name")} <br>
-//         Date: ${localStorage.getItem("date")} <br>
-//         Tickets: ${tickets}
-//     `;
-
-//     let seats = document.querySelectorAll(".seat");
-//     seats.forEach(seat => {
-//         seat.addEventListener("click", function () {
-//             if (!this.classList.contains("booked") && selectedSeats.length < tickets) {
-//                 this.classList.toggle("selected");
-
-//                 if (this.classList.contains("selected")) {
-//                     selectedSeats.push(this.innerText);
-//                 } else {
-//                     selectedSeats = selectedSeats.filter(s => s !== this.innerText);
-//                 }
-
-//                 document.getElementById("selected-seats").innerText = selectedSeats.join(", ");
-//             }
-//         });
-//     });
-
-//     document.getElementById("confirm").addEventListener("click", function () {
-//         if (selectedSeats.length < tickets) {
-//             alert("Please select all your seats.");
-//             return;
-//         }
-//        location.href="show.html"
-//     });
-// });
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    let tickets = parseInt(localStorage.getItem("tickets")) || 0;
-    let selectedSeats = [];
-
-    document.getElementById("info").innerHTML = `
-        Name: ${localStorage.getItem("name")} <br>
-        Date: ${localStorage.getItem("date")} <br>
-        Tickets: ${tickets}
-    `;
-
-    let seats = document.querySelectorAll(".seat");
-    seats.forEach(seat => {
-        seat.addEventListener("click", function () {
-            if (!this.classList.contains("booked")) {
-                if (this.classList.contains("selected")) {
-                    this.classList.remove("selected");
-                    selectedSeats = selectedSeats.filter(s => s !== this.innerText);
-                } else if (selectedSeats.length < tickets) {
-                    this.classList.add("selected");
-                    selectedSeats.push(this.innerText);
+                    section.appendChild(seat);
                 }
-                document.getElementById("selected-seats").innerText = selectedSeats.join(", ");
-            }
-        });
-    });
-
-    document.getElementById("confirm").addEventListener("click", function () {
-        if (selectedSeats.length < tickets) {
-            alert("Please select all your seats.");
-            return;
+            });
         }
-        localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));
-        location.href = "show.html";
-    });
-});
+
+        createSeats("left-section", 1);  // Left section starts with seat 1
+        createSeats("right-section", 12); // Right section starts with seat 12
+
+        function confirmSeats() {
+            let selectedSeats = [];
+            document.querySelectorAll(".seat.selected").forEach(seat => {
+                selectedSeats.push(seat.dataset.seatId);
+            });
+           location.href="show.html"
+        }
