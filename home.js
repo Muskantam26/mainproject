@@ -13,6 +13,7 @@ let remove=()=>{
     let img2=document.querySelector("#img2")
     img.innerHTML.style.display="none"
     img2.innerHTML="Signout"
+    
     localStorage.removeItem("name")
     location.reload()
 }
