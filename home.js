@@ -8,6 +8,14 @@ document.querySelectorAll('.fa-solid').forEach(heart => {
     });
 });
 
+let remove=()=>{
+    let img=document.querySelector("#img")
+    let img2=document.querySelector("#img2")
+    img.innerHTML.style.display="none"
+    img2.innerHTML="Signout"
+    localStorage.removeItem("name")
+    location.reload()
+}
 
 
 let vi=()=>{

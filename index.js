@@ -1,14 +1,3 @@
-
-// VANTA.HALO({
-//     el: "#ani",
-//     mouseControls: true,
-//     touchControls: true,
-//     gyroControls: false,
-//     minHeight: 200.00,
-//     minWidth: 200.00
-//   })
-
-
 let signUp=() =>{
     let name = document.querySelector("#name").value
     let inpnum = document.querySelector("#num").value
@@ -82,9 +71,9 @@ let login=()=>{
 if(loginname==localname && loginpass==localpass){
     location.href="home.html"
 }
-// else{
-//     alert("invalid username or password")
-// }
-return false;
 
+return false;
 }
+
+
+
